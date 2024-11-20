@@ -10,13 +10,13 @@ const getSecondLargest = (arr: number[]): number => {
     }
 
     // Clone and sort the array in ascending order
-    let arr2 = [...arr].sort((a, b) => a - b);
+   arr.sort((a, b) => a - b);
 
     // Iterate backward from the second-to-last element
-    for (let index = arr2.length - 2; index >= 0; index--) {
+    for (let index = arr.length - 2; index >= 0; index--) {
         // If the current element is not equal to the largest element
-        if (arr2[index] !== arr2[arr2.length - 1]) {
-            return arr2[index]; // Return the first smaller unique number
+        if (arr[index] !== arr[arr.length - 1]) {
+            return arr[index]; // Return the first smaller unique number
         }
     }
 
