@@ -3,7 +3,7 @@
  * @param {number[]} prices - An array of daily stock prices.
  * @returns {number} - The maximum profit achievable.
  */
-const calculateMaximumProfit = (prices: number[]): number => {
+const calculateMaximumProfitMultipleTransaction = (prices: number[]): number => {
     if (prices.length < 2) return 0; // No transactions possible if there are fewer than 2 prices.
 
     let totalProfit: number = 0;
